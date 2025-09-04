@@ -14,7 +14,7 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onStart }) => {
         <div className="flex items-center justify-center gap-4">
           <Logo />
           <h1 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight">
-            Clarity
+            IntraQuest
           </h1>
         </div>
         <p className="text-lg text-zinc-400">
