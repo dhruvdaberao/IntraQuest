@@ -1,0 +1,61 @@
+import { Dichotomy, Question } from './types';
+
+export const QUESTIONS: Question[] = [
+  // Introversion (I) vs. Extraversion (E) - 12 Questions
+  { text: "You feel drained after social events, even if you enjoyed them.", dichotomy: Dichotomy.IE, direction: -1 },
+  { text: "You're the first to introduce yourself to new people.", dichotomy: Dichotomy.IE, direction: 1 },
+  { text: "You prefer a quiet evening with a book over a loud party.", dichotomy: Dichotomy.IE, direction: -1 },
+  { text: "In conversations, you tend to listen more than you speak.", dichotomy: Dichotomy.IE, direction: -1 },
+  { text: "Being the center of attention is exciting for you.", dichotomy: Dichotomy.IE, direction: 1 },
+  { text: "You often rehearse what you're going to say before you say it.", dichotomy: Dichotomy.IE, direction: -1 },
+  { text: "You're a naturally talkative person.", dichotomy: Dichotomy.IE, direction: 1 },
+  { text: "Small talk feels incredibly tedious to you.", dichotomy: Dichotomy.IE, direction: -1 },
+  { text: "You get energized by brainstorming with a group.", dichotomy: Dichotomy.IE, direction: 1 },
+  { text: "You have a few deep friendships rather than a wide circle of acquaintances.", dichotomy: Dichotomy.IE, direction: -1 },
+  { text: "You don't mind being in the spotlight.", dichotomy: Dichotomy.IE, direction: 1 },
+  { text: "You process your thoughts best when you're alone.", dichotomy: Dichotomy.IE, direction: -1 },
+  
+  // Sensing (S) vs. Intuition (N) - 13 Questions
+  { text: "You are more focused on the present reality than future possibilities.", dichotomy: Dichotomy.SN, direction: -1 },
+  { text: "You enjoy discussing abstract concepts and theories.", dichotomy: Dichotomy.SN, direction: 1 },
+  { text: "You trust concrete data and personal experience above all else.", dichotomy: Dichotomy.SN, direction: -1 },
+  { text: "You often notice the symbolic or metaphorical meaning in things.", dichotomy: Dichotomy.SN, direction: 1 },
+  { text: "You're a very practical and down-to-earth person.", dichotomy: Dichotomy.SN, direction: -1 },
+  { text: "You love to imagine all the different paths your life could take.", dichotomy: Dichotomy.SN, direction: 1 },
+  { text: "You prefer projects with clear, step-by-step instructions.", dichotomy: Dichotomy.SN, direction: -1 },
+  { text: "You get bored with repetitive, routine tasks.", dichotomy: Dichotomy.SN, direction:1 },
+  { text: "You notice small details that others often miss.", dichotomy: Dichotomy.SN, direction: -1 },
+  { text: "Your mind often wanders into daydreams and fantasies.", dichotomy: Dichotomy.SN, direction: 1 },
+  { text: "You'd rather learn a useful skill than explore a philosophical question.", dichotomy: Dichotomy.SN, direction: -1 },
+  { text: "You're drawn to things that are complex and unconventional.", dichotomy: Dichotomy.SN, direction: 1 },
+  { text: "You appreciate a straightforward and literal communication style.", dichotomy: Dichotomy.SN, direction: -1 },
+
+  // Thinking (T) vs. Feeling (F) - 12 Questions
+  { text: "You believe making decisions based on logic is better than on emotion.", dichotomy: Dichotomy.TF, direction: -1 },
+  { text: "You often consider how your actions will affect other people's feelings.", dichotomy: Dichotomy.TF, direction: 1 },
+  { text: "You value honesty and directness over tact and diplomacy.", dichotomy: Dichotomy.TF, direction: -1 },
+  { text: "You feel a strong need to comfort someone who is upset.", dichotomy: Dichotomy.TF, direction: 1 },
+  { text: "Finding a flaw in a logical argument is satisfying to you.", dichotomy: Dichotomy.TF, direction: -1 },
+  { text: "You make choices with your heart more often than your head.", dichotomy: Dichotomy.TF, direction: 1 },
+  { text: "You can stay calm and detached in emotionally charged situations.", dichotomy: Dichotomy.TF, direction: -1 },
+  { text: "You prioritize harmony and cooperation within a group.", dichotomy: Dichotomy.TF, direction: 1 },
+  { text: "Criticism, to you, is a tool for improvement, not a personal attack.", dichotomy: Dichotomy.TF, direction: -1 },
+  { text: "You are very empathetic and can easily put yourself in others' shoes.", dichotomy: Dichotomy.TF, direction: 1 },
+  { text: "You'd rather be seen as competent than as compassionate.", dichotomy: Dichotomy.TF, direction: -1 },
+  { text: "You often make decisions to avoid creating conflict.", dichotomy: Dichotomy.TF, direction: 1 },
+
+  // Judging (J) vs. Perceiving (P) - 13 Questions
+  { text: "You feel most comfortable when you have a detailed schedule.", dichotomy: Dichotomy.JP, direction: -1 },
+  { text: "You like to keep your plans flexible and spontaneous.", dichotomy: Dichotomy.JP, direction: 1 },
+  { text: "Finishing a project well ahead of the deadline is a great feeling.", dichotomy: Dichotomy.JP, direction: -1 },
+  { text: "You enjoy the thrill of last-minute decisions.", dichotomy: Dichotomy.JP, direction: 1 },
+  { text: "You have a tidy and organized workspace.", dichotomy: Dichotomy.JP, direction: -1 },
+  { text: "You see rules and deadlines as suggestions rather than firm commands.", dichotomy: Dichotomy.JP, direction: 1 },
+  { text: "You like to make lists and check things off.", dichotomy: Dichotomy.JP, direction: -1 },
+  { text: "You prefer to start tasks rather than finish them.", dichotomy: Dichotomy.JP, direction: 1 },
+  { text: "You would rather know what you're getting into than go with the flow.", dichotomy: Dichotomy.JP, direction: -1 },
+  { text: "A surprise trip sounds like a fun adventure.", dichotomy: Dichotomy.JP, direction: 1 },
+  { text: "You dislike leaving things undecided.", dichotomy: Dichotomy.JP, direction: -1 },
+  { text: "You often change your mind, even about big decisions.", dichotomy: Dichotomy.JP, direction: 1 },
+  { text: "You feel a sense of closure when a decision is made.", dichotomy: Dichotomy.JP, direction: -1 },
+];
