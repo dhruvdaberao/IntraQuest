@@ -13,9 +13,10 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onStart }) => {
       <div className="flex flex-col items-center text-center space-y-2">
         <div className="flex items-center justify-center gap-4">
           <Logo />
-          <h1 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight">
-            IntraQuest
-          </h1>
+        <h1 className="text-4xl md:text-5xl font-bold text-white tracking-tight">
+           IntraQuest
+        </h1>
+
         </div>
         <p className="text-lg text-zinc-400">
           AI-Powered Personality Insights
