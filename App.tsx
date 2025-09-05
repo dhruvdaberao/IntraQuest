@@ -108,7 +108,7 @@ const App: React.FC = () => {
   const backgroundClass = theme.bg.includes('from-') ? `bg-gradient-to-br ${theme.bg}` : theme.bg;
 
   return (
-    <div className={`min-h-screen flex flex-col items-center justify-center p-4 transition-colors duration-500 ${backgroundClass}`}>
+    <div className={`min-h-screen flex flex-col items-center justify-center p-4 md:p-8 transition-colors duration-500 ${backgroundClass}`}>
        <main className="w-full max-w-4xl mx-auto z-10">
         {error && <div className="bg-red-500/10 border border-red-500/30 text-red-400 p-4 rounded-xl mb-4 text-center text-lg animate-pulse">{error}</div>}
         {renderContent()}

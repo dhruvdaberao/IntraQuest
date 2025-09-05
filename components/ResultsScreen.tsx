@@ -16,7 +16,7 @@ const TabButton: React.FC<{ active: boolean, onClick: () => void, children: Reac
     const isDefaultTheme = theme.accentText.includes('zinc');
     const activeTextColor = isDefaultTheme ? 'text-zinc-900' : 'text-white';
     
-    const baseClasses = "flex items-center space-x-2 px-3 py-2 text-sm rounded-lg transition-all duration-200 font-semibold";
+    const baseClasses = "flex items-center space-x-1 sm:space-x-2 px-2.5 py-1.5 sm:px-3 sm:py-2 text-xs sm:text-sm rounded-lg transition-all duration-200 font-semibold";
     const activeClasses = `${theme.accentBg} ${activeTextColor} shadow-md`;
     const inactiveClasses = `text-zinc-300 hover:bg-white/10 hover:text-white`;
 
@@ -28,12 +28,12 @@ const TabButton: React.FC<{ active: boolean, onClick: () => void, children: Reac
 }
 
 const InsightCard: React.FC<{ title: string; children: React.ReactNode; icon: React.ReactNode; theme: Theme }> = ({ title, children, icon, theme }) => (
-    <div className={`bg-zinc-900/50 p-6 rounded-xl border ${theme.baseBorder} shadow-lg`}>
-        <h3 className={`text-2xl mb-4 flex items-center font-bold ${theme.headingText}`}>
+    <div className={`bg-zinc-900/50 p-4 sm:p-6 rounded-xl border ${theme.baseBorder} shadow-lg`}>
+        <h3 className={`text-lg sm:text-xl mb-4 flex items-center font-bold ${theme.headingText}`}>
             {icon}
             <span className="ml-3">{title}</span>
         </h3>
-        <div className={`text-zinc-300 space-y-4 prose prose-invert prose-p:text-zinc-300 prose-strong:text-white prose-ul:list-disc prose-ul:list-inside`}>{children}</div>
+        <div className={`text-zinc-300 space-y-4 prose prose-sm sm:prose-base prose-invert prose-p:text-zinc-300 prose-strong:text-white prose-ul:list-disc prose-ul:list-inside`}>{children}</div>
     </div>
 );
 
@@ -79,13 +79,13 @@ export const ResultsScreen: React.FC<ResultsScreenProps> = ({ insights, personal
 
   return (
     <div className="animate-fade-in space-y-6">
-      <div className={`text-center p-8 bg-zinc-900/50 rounded-2xl shadow-2xl border ${theme.baseBorder} backdrop-blur-sm`}>
-        <h3 className={`text-2xl font-medium ${theme.baseText}`}>Your Personality Type Is</h3>
-        <h1 className={`text-6xl md:text-8xl my-1 font-extrabold ${theme.accentText}`}>{personalityType}</h1>
-        <h2 className={`text-3xl md:text-4xl ${theme.headingText} font-semibold`}>{insights.title}</h2>
+      <div className={`text-center p-6 sm:p-8 bg-zinc-900/50 rounded-2xl shadow-2xl border ${theme.baseBorder} backdrop-blur-sm`}>
+        <h3 className={`text-xl sm:text-2xl font-medium ${theme.baseText}`}>Your Personality Type Is</h3>
+        <h1 className={`text-5xl sm:text-6xl md:text-8xl my-1 font-extrabold ${theme.accentText}`}>{personalityType}</h1>
+        <h2 className={`text-2xl sm:text-3xl md:text-4xl ${theme.headingText} font-semibold`}>{insights.title}</h2>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-2 p-2 bg-zinc-800/60 rounded-xl border border-zinc-700/50 backdrop-blur-sm">
+      <div className="flex flex-wrap justify-center gap-1.5 sm:gap-2 p-2 bg-zinc-800/60 rounded-xl border border-zinc-700/50 backdrop-blur-sm">
         <TabButton active={activeTab === 'overview'} onClick={() => setActiveTab('overview')} theme={theme}><Icons.Overview /><span>Overview</span></TabButton>
         <TabButton active={activeTab === 'strengths'} onClick={() => setActiveTab('strengths')} theme={theme}><Icons.Strengths /><span>+/-</span></TabButton>
         <TabButton active={activeTab === 'vibe'} onClick={() => setActiveTab('vibe')} theme={theme}><Icons.Vibe /><span>Vibe</span></TabButton>
